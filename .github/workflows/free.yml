@@ -111,8 +111,8 @@ jobs:
           URLS_RAW="${YT_URLS}"
           read -ra URL_LIST <<< "$URLS_RAW"
           TOTAL_URLS=${#URL_LIST[@]}
-          QUALITY="360"
-          FORMAT="bestvideo[height<=360]+bestaudio/bestvideo[height<=360]*+bestaudio*/best[height<=360]/best"
+          QUALITY="1080"
+          FORMAT="bestvideo[height<=1080]+bestaudio/bestvideo[height<=1080]*+bestaudio*/best[height<=1080]/best"
           SPLIT_MB=45
           SPLIT_BYTES=$(( SPLIT_MB * 1024 * 1024 ))
           BACKUP_DIR="/tmp/video_backup_$$"
